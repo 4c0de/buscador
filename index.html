@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+       <link type="text/css" rel="stylesheet" href="css/micss.css"/>
+        <title>GoogleTron</title>
+    </head>
+
+    
+      
+ <body>
+      
+     <header>
+         <div>
+          <img id="imagen" class="ocultar" src="img/google.jpg">
+         </div>  
+     </header>
+     
+     <div class="col-sm-10">
+         <input type="text" id="p"  class="form-control ocultar"   placeholder="Insertar búsqueda" ></input>
+         <button type="submit" id="boton" class="btn btn-primary btn-lg ocultar" name="ocultar" onclick="recibir(p.value)">Buscar con Google</button>
+     </div>
+
+      
+     <div id="ajustar" class="form-group ocultar">
+         <label id="text" class="ocultar">Resultado de la búsqueda:</label>
+         <textarea  id="texto" readonly class="form-control ocultar" rows="1"></textarea>
+    </div>
+     
+     
+     
+    <script type="text/javascript" src="js/js.js"></script>
+    <script type="text/javascript" src="js/api.js"></script>
+    <footer><p id="fo" class="ocultar">© GoogleTron todos los derechos reservados</p></footer> 
+</body>
+</html>

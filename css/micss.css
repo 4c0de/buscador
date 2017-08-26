@@ -1,0 +1,135 @@
+   
+html,body, *, *::before, *::after
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-style: inherit;
+    box-sizing: border-box;
+    
+}
+ #ajustar {
+ 
+    margin: 30rem;
+    padding: 2rem;
+    display: none;
+    
+ }
+ #texto{
+     display:none;
+ }
+ #text{
+     display: none;
+ }
+
+html{
+    width: 100%;
+    height: 100%;
+
+    }
+
+
+#boton{
+       
+    margin-left: 48%;
+    margin-right: 48%;
+        
+}
+
+#imagen{
+ 
+    height:200px; 
+    width:200px;
+    margin-left: 40%;
+    margin-right: 40%;
+     
+   
+   
+    
+}
+
+#p{
+  margin-left: 10%;
+  margin-right: 10%;
+  
+        
+}
+
+footer{
+  padding: 1px 0;
+  overflow: hidden;
+  display: block;
+  width: 97%;
+  bottom: 0;   
+  position: fixed;
+  height: 65px;
+  text-align: center;
+
+
+}
+
+footer p{
+  color: #2E9AFE;
+  
+}
+
+.precarga{
+    position:relative;
+    width: 200px;
+    margin: 0 auto;
+    top:250px;
+    animation: fadein 6s;
+    
+}
+.precarga:before{
+    width:20px;
+    height:20px;
+    border-radius:20px;
+    /*siempre debe ir el content con el before y el after*/
+    content:'';
+    position:absolute;
+    background:#FF0000;
+    animation: precarga_before 1.5s infinite ease-in-out;
+    
+  
+ 
+
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1;}
+    to   { opacity: 0;}
+}
+ 
+.precarga:after{
+    width:20px;
+    height:20px;
+    border-radius:20px;
+    content:'';
+    position:absolute;
+    background:#190707;
+    left:100px;
+    animation: precarga_after 1.5s infinite ease-in-out;
+      
+  
+}
+ 
+@keyframes precarga_before {
+    0% {transform: translateX(0px) rotate(0deg)}
+    80% {transform: translateX(150px) scale(2.2) rotate(260deg); background:#190707;}
+    100% {transform: translateX(0px) rotate(0deg)}
+}
+@keyframes precarga_after {
+    0% {transform: translateX(0px)}
+    80% {transform: translateX(-150px) scale(2.2) rotate(-260deg);background:#FF0000;}
+    100% {transform: translateX(0px)}
+    
+}
